@@ -1,0 +1,67 @@
+.main-container {
+  margin-top: 120px;
+}
+#main-content-grid {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main-content-grid > div:nth-of-type(2n+1) {
+  padding-right: 40px;
+}
+#main-content-grid > div:nth-of-type(2n) {
+  padding-left: 40px;
+}
+.content-tile {
+  box-sizing: border-box;
+  width: 50%;
+  padding-bottom: 120px;
+}
+.content-tile article {
+  position: relative;
+}
+.content-tile article.c-link-snippet {
+  padding: 15px;
+}
+.content-tile article.c-link-post .c-link-content {
+  margin: 0 0 13px 0;
+}
+.content-tile article.c-link-post .c-link-content p {
+  margin-bottom: 0;
+}
+.content-tile hr {
+  margin: 20px 0;
+}
+.content-tile.content-tile-two-thirds {
+  width: 100%;
+}
+.content-tile.content-tile-half {
+  width: 50%;
+}
+.content-tile.content-tile-full,
+.content-tile.app-content-tile {
+  width: 100% !important;
+}
+.content-tile.c-tile-snippet {
+  padding-top: 10px;
+}
+.content-tile.c-tile-snippet article {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+.content-tile.c-tile-snippet article .c-link-content p {
+  font-size: 1.8em;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+.content-tile.c-tile-snippet article .c-link-content p a {
+  font-weight: inherit;
+}
+.c-link-header {
+  padding: 0 0 10px 0;
+}
+.c-link-footer {
+  padding: 5px 15px 15px 15px;
+}

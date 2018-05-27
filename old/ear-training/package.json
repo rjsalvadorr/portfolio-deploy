@@ -1,0 +1,29 @@
+{
+  "name": "browser-ear-trainer",
+  "version": "0.1.3",
+  "description": "Ear-training utility for musicians",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "midi-writer-js": "^1.4.0",
+    "midi-player-js": "^1.0.1",
+    "teoria": "^2.2.0",
+    "soundfont-player": "^0.10.5"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjsalvadorr/browsear-training.git"
+  },
+  "keywords": [
+    "ear-training"
+  ],
+  "author": "RJ Salvador <rjsalvadorr@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/rjsalvadorr/browsear-training#readme"
+}

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /hairstylist.html
+Disallow: /hotel.html
+Disallow: /movies.html
+Disallow: /trycatch.html
+Disallow: /untitled_game.html
+Disallow: /weekly_scheduler.html
+Disallow: /misc.html

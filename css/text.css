@@ -1,0 +1,153 @@
+/**** TEXT STYLING *****/
+.main-page-title {
+  font-family: 'Kalam', cursive;
+  width: 100%;
+  color: #fff;
+  font-size: 4.125rem;
+  line-height: 4.125rem;
+  letter-spacing: 1px;
+}
+.main-page-title,
+.menu-link-title,
+.footer-link-title {
+  text-shadow: 2px 2px 3px #322;
+}
+.menu-link-title,
+.footer-link-title {
+  font-weight: 300;
+}
+.c-link-title {
+  font-weight: 300;
+  color: #fff;
+}
+.c-link-title:hover,
+.c-link-title:focus,
+.c-link-title:active {
+  color: #ccc;
+}
+body,
+p,
+ul,
+li,
+span,
+div,
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.1px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 2px 2px 3px #000;
+}
+a {
+  text-decoration: none;
+  color: #f55;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #f11;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+p a {
+  color: #f55;
+  font-size: inherit;
+  line-height: inherit;
+}
+p a:hover,
+p a:focus,
+p a:active {
+  color: #f11;
+}
+#main-page-subtitle {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+.c-link-subtitle,
+.post-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.c-link-back .c-link-anchor .c-link-title {
+  color: #fff;
+}
+.c-link-back .c-link-anchor .c-link-title:hover {
+  color: #d9d9d9;
+}
+.c-link-back .c-link-anchor .c-link-title:hover span.glyphicon {
+  color: #d9d9d9;
+}
+.post-back .post-anchor .post-title {
+  color: #fff;
+}
+.post-back .post-anchor .post-title span.glyphicon {
+  color: #fff;
+}
+.post-back .post-anchor .post-title:hover {
+  color: #d9d9d9;
+}
+.post-back .post-anchor .post-title:hover span.glyphicon {
+  color: #d9d9d9;
+}
+.c-link-back .c-link-title {
+  font-size: 60px;
+  line-height: 60px;
+}
+.c-link-back .c-link-title span.glyphicon {
+  font-size: 48px;
+  line-height: 48px;
+}
+.c-link-snippet p {
+  font-size: 1.7rem;
+}
+.c-link-snippet p a {
+  font-size: inherit;
+}
+.c-link-anchor,
+.post-anchor {
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+}
+.post-anchor {
+  font-size: 32px;
+}
+.post-anchor span.glyphicon {
+  font-size: 26px;
+  color: #f55;
+}
+.post-anchor:hover span.glyphicon {
+  color: #f11;
+}
+.post-anchor .c-link-title {
+  color: #f55;
+}
+.post-anchor .c-link-title:hover,
+.post-anchor .c-link-title:focus,
+.post-anchor .c-link-title:active {
+  color: #f11;
+}
+/**** END TEXT STYLING *****/

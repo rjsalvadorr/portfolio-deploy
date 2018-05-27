@@ -1,0 +1,242 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #111;
+    background: url("../img/gray_wood_grain_500.jpg") repeat fixed;
+    font-family: 'crimson_textregular', Times, serif;
+    color: #DDD;
+}
+
+#main-container {
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'open_sansbold', Arial, sans-serif;
+    margin: 0 0 0.3em 0;
+    color: #FFF;
+}
+
+a {
+    color: #428BCA;
+}
+
+hr {
+    margin-top: 0;
+    width: 90%;
+}
+
+p, a, span, li  {
+    font-size: 1.62rem;
+}
+
+select, input.quizzer-answer.qz-simple, .quizzer-input {
+    color: #333;
+    padding: 0.15em;
+}
+
+
+
+/******************************************************************************
+*****   LOGO / MAIN TITLE   ***************************************************
+******************************************************************************/
+
+#logo-header-sm {
+    color: #FFF;
+    padding: 1em 1.6em;
+    font-weight: bold;
+}
+#logo-title-sm {
+    margin: 0;
+}
+
+#link-button-portfolio {
+    background-color: #222;
+    border-color: #222;
+}
+
+#logo-container {
+    padding: 2em;
+}
+
+#logo-header-lg {
+    color: #FFF;
+    padding: 0;
+    font-weight: bold;
+}
+#logo-title-lg {
+    font-size: 3.7rem;
+    margin: 0;
+}
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#link-list {
+    margin: 1em 0 0 0;
+}
+#link-list > li > a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #FFF;
+}
+li {
+    padding: 0.3em 0;
+}
+
+#logo-container {
+    position: fixed;
+}
+
+#logo-sm-md-lg {
+    
+}
+
+#logo-xs {
+    font-size: 3em;
+    margin: 0;
+}
+
+
+
+/******************************************************************************
+*****   MAIN CONTENT   ********************************************************
+******************************************************************************/
+
+#main-content {
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    min-height: 80em;
+}
+
+.content-container {
+    padding: 2em 2.6em;
+}
+.content-container:first-of-type {
+    padding-top: 2.6em;
+}
+.content-subcontainer {
+    padding-top: 1.7em;
+}
+.content-subcontainer:first-of-type {
+    padding-top: 0em;
+}
+
+th, td {
+    padding: 0 0.6em 0 0;
+    font-size: 1.2em;
+}
+.status-param {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.status-ind {
+    color: #CC0000;
+    font-size: 1.2em;
+    margin-left: 0.2em;
+}
+
+.btn {
+    margin: 0.8em 0;
+}
+
+#main-content h2 {
+    text-align: center;
+}
+
+
+
+/******************************************************************************
+*****   UTILITY CLASSES   *****************************************************
+******************************************************************************/
+.color-red {
+    color: #CC0000;
+}
+
+.color-green {
+    color: #00B000;
+}
+
+.color-yellow {
+    color: #E5C100;
+}
+
+.tight {
+    margin: 0;
+}
+
+.inline-bold {
+    font-family: 'open_sansbold', Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////
+/////   MEDIA QUERIES     /////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////*/
+
+/*/////   DESKTOP  /////*/
+@media only screen
+and (min-width: 48.06251rem) {
+    .content-subcontainer {
+        padding-top: 0em;
+    }
+    .content-subcontainer:first-of-type {
+        padding-top: 0em;
+    }
+}
+
+/*/////   MOBILE, PORTRAIT  /////*/
+@media only screen
+and (max-width: 48rem) {
+    .content-container {
+        padding: 1em 1.6em;
+    }
+    .content-container:first-of-type {
+        padding-top: 2em;
+    }
+}
+.portfolio-img {
+    float: left;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1em;
+}
+
+.portfolio-content {
+    margin: 1.3em 0;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////
+/////   QUIZZER   /////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////*/
+
+#quizzer-menu {
+    margin: 1.66em 0;
+}
+
+.answer-error {
+    border: solid 0.1em red;
+}
+
+.answer-correct {
+    border: solid 0.1em green;
+}
+#quizzer-notifications {
+    margin: 1em 0;
+}
+
+.quiz-music-key {
+    margin: 1em 0;
+}
+
+.quiz-music-accidental-select {
+    margin-right: 1em;
+}

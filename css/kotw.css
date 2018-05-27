@@ -1,0 +1,131 @@
+#kotw-output {
+  margin-top: 50px;
+}
+
+.key-title {
+  text-align: center;
+}
+
+.key-title,
+.scale-spelling {
+  text-transform: none;
+}
+
+.scale-spelling {
+  text-align: center;
+  font-size: 30px;
+}
+
+.kotw-heading {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul.measures li,
+ul.diatonic-chords li {
+  border: 1px #cccccc solid;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-collapse: collapse;
+
+  font-family: 'Merriweather', times, serif;
+}
+
+ul.measures li small,
+ul.diatonic-chords li small {
+  font-size: 75%;
+  color: #cccccc;
+}
+
+ul.measures li {
+    width: 25%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+ul.diatonic-chords li {
+    width: 14.28571428571429%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+sup.chord-mod {
+    font-size: 60%;
+    padding-left: 3px;
+}
+
+option,
+.kotw-control {
+  color: #222;
+}
+
+.kotw-control {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.chord-spacer {
+    margin-left: 4%;
+    margin-right: 4%;
+    color: #333;
+    font-size: 10px;
+}
+
+.kotw-label {
+    /* height: 30px; */
+    margin-right: 5px;
+}
+
+/**********   TABLE   **********/
+
+.kotw-table {
+  border: 1px #CCC solid;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout:fixed;width:100%;
+  margin-bottom: 20px;
+}
+
+.kotw-table .kotw-heading {
+  color: #FFF;
+  margin: 0;
+  font-size: 26px;
+}
+
+.kotw-table td {
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px #CCC solid;
+  border-top: 1px #CCC solid;
+  font-size: 18px;
+}
+
+.kotw-table td small {
+  font-size: 75%;
+  color: #BBB;
+}
+
+.kotw-table.progression-table td {
+  border: 1px #CCC solid;
+}
+
+td.title-cell {
+  width: 25%;
+  border-right: 1px #CCC solid;
+}
+
+.kotw-table tbody > tr > *:nth-last-child(2)~*{ width:37.5%}
+.kotw-table tbody > tr > *:nth-last-child(3)~*{ width:25%}
+.kotw-table tbody > tr > *:nth-last-child(4)~*{ width:18.75%}
+.kotw-table tbody > tr > *:nth-last-child(5)~*{ width:15%}
+.kotw-table tbody > tr > *:nth-last-child(6)~*{ width:12.5%}
+.kotw-table tbody > tr > *:nth-last-child(7)~*{ width:10.71%}
+.kotw-table tbody > tr > *:nth-last-child(8)~*{ width:9.375%}

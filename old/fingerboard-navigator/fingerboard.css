@@ -1,0 +1,311 @@
+body {
+  background: none;
+  background-color: #888;
+  color: #111;
+  font-family: sans-serif;
+}
+#fretboard-container {
+  position: relative;
+}
+.nut {
+  width: 30px;
+  display: inline-block;
+  background-color: #222;
+}
+.nut.minimalist {
+  background-color: white !important;
+  border-color: black !important;
+  border-style: solid;
+  border-width: 2px !important;
+  color: black !important;
+  border-right: none;
+}
+.nut.minimalist .highlight-root {
+  background-color: #000;
+  color: #fff;
+}
+.nut.minimalist .highlight-third {
+  background-color: #eee;
+}
+.nut.minimalist .highlight-fifth {
+  background-color: #bbb;
+}
+.nut.minimalist .highlight-seventh {
+  background-color: #fff;
+}
+.nut.minimalist .note-unit-label {
+  border: 2px #000 solid;
+}
+.nut.fretted {
+  background-color: #ffe4c4;
+}
+.fingerboard {
+  width: calc(100% - 30px);
+  display: inline-block;
+  background-color: #444;
+}
+.fingerboard.minimalist {
+  background-color: white !important;
+  border-color: black !important;
+  border-style: solid;
+  border-width: 2px !important;
+  color: black !important;
+}
+.fingerboard.minimalist .highlight-root {
+  background-color: #000;
+  color: #fff;
+}
+.fingerboard.minimalist .highlight-third {
+  background-color: #eee;
+}
+.fingerboard.minimalist .highlight-fifth {
+  background-color: #bbb;
+}
+.fingerboard.minimalist .highlight-seventh {
+  background-color: #fff;
+}
+.fingerboard.minimalist .note-unit-label {
+  border: 2px #000 solid;
+}
+.fingerboard.minimalist .note-unit-fret {
+  background: #000 !important;
+}
+.fingerboard.fretted {
+  background-color: #33200C;
+}
+.fingerboard-unit {
+  display: inline-block;
+}
+.fingerboard-note-unit {
+  height: 30px;
+  position: relative;
+}
+.strings.minimalist .string {
+  background: #000 !important;
+  box-shadow: none !important;
+  border-width: 0 !important;
+}
+.note-unit-label {
+  height: 26px;
+  width: 26px;
+  border-radius: 13px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #fff;
+  z-index: 300;
+}
+.chord-superscript {
+  font-size: 11px;
+  vertical-align: top;
+  letter-spacing: -2px;
+}
+.nut .note-unit-label {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.nut .note-unit-fret {
+  display: none !important;
+}
+.nut-unit {
+  display: inline-block;
+  width: 100%;
+}
+.fretless .note-unit-label {
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+.fretless .guide-marker {
+  right: 0;
+}
+.fretless .guide-marker.one-marker::before,
+.fretless .guide-marker.one-marker::after {
+  margin-left: -11px;
+}
+.fretless .guide-marker.two-markers::before,
+.fretless .guide-marker.two-markers::after {
+  margin-left: -11px;
+}
+.fretless .guide-text-marker {
+  position: absolute;
+  width: 26px;
+  right: 0;
+}
+.fretted .note-unit-fret {
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: #999;
+  background: linear-gradient(90deg, #ddd, #999);
+}
+.fretted .note-unit-label {
+  position: absolute;
+  top: 2px;
+  left: calc(50% -  13px);
+}
+.fretted .guide-marker {
+  left: 50%;
+}
+.fretted .guide-marker.one-marker::before,
+.fretted .guide-marker.one-marker::after {
+  margin-left: -8px;
+}
+.fretted .guide-marker.two-markers::before,
+.fretted .guide-marker.two-markers::after {
+  margin-left: -8px;
+}
+.fretted .guide-harmonic-marker {
+  margin-right: -11px;
+}
+/******************************************************************************
+*****   FINGERBOARD GUIDE   ***************************************************
+******************************************************************************/
+.guide {
+  margin-left: 30px;
+}
+.guide .guide-marker,
+.guide .guide-text-marker,
+.guide .guide-harmonic-marker {
+  display: none;
+}
+.guide.dots .guide-marker {
+  display: block;
+}
+.guide.numerals .guide-text-marker {
+  display: block;
+}
+.guide.harmonic-nodes .guide-harmonic-marker {
+  display: block;
+}
+.guide.minimalist .guide-marker.two-markers::before,
+.guide.minimalist .guide-marker.two-markers::after,
+.guide.minimalist .guide-marker.one-marker::before {
+  border: solid 2px black;
+}
+.guide-unit {
+  height: 45px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+.guide-marker {
+  position: absolute;
+  top: 0;
+  height: 45px;
+  width: 8px;
+}
+.guide-marker.one-marker::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  margin-left: -8px;
+  top: 14.5px;
+}
+.guide-marker.two-markers::before,
+.guide-marker.two-markers::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: white;
+  margin-left: -8px;
+}
+.guide-marker.two-markers::before {
+  top: 4px;
+}
+.guide-marker.two-markers::after {
+  bottom: 4px;
+}
+.guide-text-marker {
+  text-align: center;
+  font-weight: bold;
+  font-family: serif;
+  line-height: 45px;
+}
+.guide-harmonic-marker {
+  position: absolute;
+  text-align: center;
+  width: 26px;
+  right: 0;
+  top: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.guide-harmonic-marker::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  transform: rotate(45deg);
+  border: #000 2px solid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/******************************************************************************
+*****   STRINGS   *************************************************************
+******************************************************************************/
+.strings {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+.string-unit {
+  height: 30px;
+  padding-top: 13px;
+}
+.string {
+  height: 3px;
+  background-color: #000;
+  background: linear-gradient(#CCC, #666);
+  box-shadow: 0 2px 3px #281909;
+}
+/******************************************************************************
+*****   CONTROLS AND TEXT   ***************************************************
+******************************************************************************/
+#text-current-instrument {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'open_sansbold', Arial, sans-serif;
+}
+#title-current-instrument {
+  display: inline;
+}
+/******************************************************************************
+*****   HIGHLIGHTING   ********************************************************
+******************************************************************************/
+.highlight-root {
+  background-color: #ff3333;
+}
+.highlight-third {
+  background-color: #ff9999;
+}
+.highlight-fifth {
+  background-color: #ff6666;
+}
+.highlight-seventh {
+  background-color: #ffcccc;
+}
+.minimalist .highlight-root {
+  background-color: #000;
+  color: #fff;
+}
+.minimalist .highlight-third {
+  background-color: #eee;
+}
+.minimalist .highlight-fifth {
+  background-color: #bbb;
+}
+.minimalist .highlight-seventh {
+  background-color: #fff;
+}
+/******************************************************************************
+*****   THEMES   **************************************************************
+******************************************************************************/

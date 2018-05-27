@@ -1,0 +1,80 @@
+@buttonHeight: 40px;
+@buttonBorderRadius: 2px;
+@buttonTextHeight: 20px;
+@buttonPadding: 8px;
+@buttonBackground: #ddf;
+@buttonBackgroundDark: #445;
+
+#msg-container {
+    height: 30px;
+    font-size: 30px;
+}
+
+/////  GENERAL STYLES  /////
+
+body {
+    background-color: #222;
+    color: #ddd;
+}
+
+/////  TEXT  /////
+.et-button-label {
+    font-size: @buttonTextHeight;
+    line-height: @buttonHeight;
+}
+
+.et-button {
+    background-color: @buttonBackground;
+    color: #222;
+    font-size: @buttonTextHeight;
+    line-height: @buttonHeight;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: @buttonPadding;
+    padding-right: @buttonPadding;
+
+    height: @buttonHeight;
+    border: none;
+    border-radius: @buttonBorderRadius;
+    
+    &.active {
+        background-color: #fff;
+    }
+}
+
+.et-button-fill {
+    &:extend(.et-button);
+    width: 100%;
+}
+
+.button-row {
+    margin-bottom: 15px;
+}
+
+.et-btn-group {
+    width: 100%;
+    
+    .et-button {
+        background-color: @buttonBackgroundDark;
+        
+        &.active {
+            background-color: @buttonBackground;
+        }
+    }
+}
+
+.et-btn-group-two {
+    //&:extend(.et-btn-group);
+    .et-btn-group();
+    
+    .et-button {
+        width: 50%;
+    }
+}
+
+
+
+#btn-help-icon {
+    font-weight: bold;
+}

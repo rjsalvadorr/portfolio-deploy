@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BOOTSTRAP: The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>RJ Salvador - Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- META TAGS FOR FACEBOOK AND OTHER LINKS -->
+    <meta name="description" content="RJ Salvador&#39;s Portfolio. Featuring software, music, and other treats.">
+    <meta name="author" content="RJ Salvador">
+    <link rel="image_src" href="http://rj-salvador.com/images/img-icon4.jpg">
+    <meta property="og:site_name" content="RJ Salvador - Portfolio">
+    <meta property="og:title" content="RJ Salvador - Portfolio">
+    <meta property="og:description" content="RJ Salvador&#39;s Portfolio. Featuring software, music, and other treats.">
+    <meta property="og:image" content="http://rj-salvador.com/images/img-icon4.jpg">
+    <meta property="og:url" content="http://rj-salvador.com">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="/scripts/jquery.litebox.js"></script>
+    <script src="/scripts/globals.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400|Kalam:700" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/jquery.litebox.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+</head>
+
+
+
+<body class='layout-post'>
+    <!--
+    DEBUG DATA
+    is home? false
+    is post? true
+    is archive? false
+    is category? false
+    is tag? false
+    -->
+
+    <div id='body-filter'>
+        <!-- This div is for visual effects -->
+    </div>
+    <!--
+    The menu bar has a "fixed" position, so its place in the
+    DOM heirarchy doesn't really matter.
+    -->
+    
+
+<div class='menu-link-container template--menu-bar'>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <div id='main-title-wrapper'>
+                    <h1 class='main-page-title'>RJ Salvador</h1>
+                </div>
+                
+                        
+
+<nav class="menu-link-wrapper active menu-link-1 template--menu-link">
+    <article class="menu-link">
+        <a class="menu-link-anchor" href="/tags/software/">
+            <div class='menu-link-text'>
+                <span class="menu-link-title">Software</span>
+                
+                
+            </div>
+        </a>
+    </article>
+</nav>
+
+
+                
+                        
+
+<nav class="menu-link-wrapper  menu-link-2 template--menu-link">
+    <article class="menu-link">
+        <a class="menu-link-anchor" href="/tags/music/">
+            <div class='menu-link-text'>
+                <span class="menu-link-title">Music</span>
+                
+                
+            </div>
+        </a>
+    </article>
+</nav>
+
+
+                
+                        
+
+<nav class="menu-link-wrapper  menu-link-3 template--menu-link">
+    <article class="menu-link">
+        <a class="menu-link-anchor" href="/tags/blog/">
+            <div class='menu-link-text'>
+                <span class="menu-link-title">Misc</span>
+                
+                
+            </div>
+        </a>
+    </article>
+</nav>
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <main id="main-container" class="container main-container">
+        
+<div class='row template--post'>
+    <div id='primary-content-tile' class="six columns">
+        <header id="post-header">
+            <h1 class="post-title">BroQuest</h1>
+        
+            
+                <small class="post-subtitle">Winter 2012 - Summer 2013</small>
+            
+        </header>
+        <div class="post-content">
+        
+        <p>A few years ago, I decided to make a cool video game from scratch. I tinkered around with a C++ library called SDL and tried to make a Zelda-esque platformer. <a id="more"></a> So why did I call it a BroQuest? Upon finding out about my project, my brother Mike offered his artistic skills to the project by designing the main character’s sprites.</p>
+<h2 id="Quick-Stats"><a href="#Quick-Stats" class="headerlink" title="Quick Stats"></a>Quick Stats</h2><table>
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SOFTWARE USED</strong></td>
+<td><a href="https://www.libsdl.org/" target="_blank" rel="noopener"><em>SDL</em></a>, a C++ library for controlling graphics/audio, and <em>Visual Studio 2012</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Game-plan"><a href="#Game-plan" class="headerlink" title="Game plan"></a>Game plan</h2><p>The game needed a few parts to function properly. Including, but not limited to:</p>
+<ul>
+<li>The game engine. This is the cornerstone of the game. It continuously keeps track of in-game entities, interprets player inputs, and controls in-game events and NPC actions, and then renders the game for the player to see.</li>
+<li>A co-ordinate system to describe in-game space. This was a 2-dimensional game, so we just need 2 axes. Each entity exists in that space, and the engine will move entities and control interactions between them and the world.</li>
+<li>Graphics. Each object needs graphics to be shown on the screen. If an object has different states, or can be seen from multiple angles, we needed more graphics for it. And also if we have different types of terrain.</li>
+<li>Camera system. We want a game world that’s larger than the screen. So we need a way to show only relevant events (around the character).</li>
+</ul>
+<h2 id="Pulling-it-off"><a href="#Pulling-it-off" class="headerlink" title="Pulling it off"></a>Pulling it off</h2><p>I first got to work with displaying a character, and getting it to move. Once that was finished, I added an “interact” function to my character. I created chests that can be “opened” when the player interacts with it. That interaction didn’t really do much; it just changed the graphic. But now I had a character I could move and I can make it do things. Neat!</p>
+<p>Then there’s the map and the ground that our players are walking in. The game has a grid system that represents the game world, and each “block” type in this grid represent different materials. Dirt and pavement blocks allow the player to walk on it. However, wall blocks and chests act as obstacles to players/NPCs. Certain blocks allow the player to move from level to level (Though I only ended up with two levels).</p>
+<p>Neat, but not really exciting. So I made some graphics for a weapon, and gave my character the ability to “attack” things. But what use is attacking if you have nothing to attack? So I created non-player characters that I could hit. Basically, when my character’s sword co-ordinates line up with an NPC’s body, that NPC gets hit. I introduced a primitive “blur” animation to show a “damaged” state. Fun!</p>
+<p>Fun, but it gets old after a while. So I gave them the ability to strike back. I programmed them to hunt my character down. They would continuously walk in my character’s direction and attack me when I’m in range. A little bit more exciting, but we could make this a LOT more fun.</p>
+<p>So I introduced death to this world.</p>
+<p>Each entity now had a set number of Hit Points. When an entity’s hit point count reaches zero, it perishes. I added animations showing the characters’ death throes. The dying character lies on its side upon its death. Then it does a “blur” animation for a few times, and then disappears.</p>
+<p>My character and the NPCs can now die. What a terrible world. But it’s the kind of world that makes for good games.</p>
+<p>It’s at this point that Mike jumped in the project, and made the main character look super cool. You see the spritesheet on this page? Thanks to Mike, Our dashing hero is wearing an adventurous outfit, and armed with a badass club. Thanks to me, the ugly villains are very pixellated and look rather featureless. Our hero looked a lot like these guys in the original version.</p>
+<h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><p>Unfortunately, we stopped working on this when the summer ended and we just got busy with life. I went back to school, and my brother got a bit more busy at work.</p>
+<p>I don’t think it was a complete waste, though. Here’s what I got working:</p>
+<ul>
+<li>Game engine!</li>
+<li>Co-ordinate/map grid system.</li>
+<li>Basic animation through sprites.</li>
+<li>Controls to let the player move and interact with world by opening things and slaying NPCs.</li>
+<li>Primitive AI. Yeah, all these guys do is move towards my character in a straight line and attack if I’m close enough. But they’re doing these things without player commands!</li>
+</ul>
+<p>From this attempt at making a game, I gained some solid appreciation for the hard work that game devs do. There are a lot of things that can go awry when in-game objects behave in unexpected ways. And it feels very easy to end up with something completely unplayable.</p>
+<p>It’s also insanely fun to create a miniature universe where you can define rules and essentially be a living deity.</p>
+
+        </div>
+    </div>
+    <div class="six columns post-column--images">
+        
+            <div class="content-tile content-tile-img">
+                <a class="image-lbox" href="/images/broquest-sketch-01.jpg">
+                    <img src="/images/broquest-sketch-01.jpg" class="post-image img-responsive">
+                </a>
+            </div>
+        
+            <div class="content-tile content-tile-img">
+                <a class="image-lbox" href="/images/broquest-sketch-02.jpg">
+                    <img src="/images/broquest-sketch-02.jpg" class="post-image img-responsive">
+                </a>
+            </div>
+        
+            <div class="content-tile content-tile-img">
+                <a class="image-lbox" href="/images/broquest-01.jpg">
+                    <img src="/images/broquest-01.jpg" class="post-image img-responsive">
+                </a>
+            </div>
+        
+            <div class="content-tile content-tile-img">
+                <a class="image-lbox" href="/images/broquest-dead.jpg">
+                    <img src="/images/broquest-dead.jpg" class="post-image img-responsive">
+                </a>
+            </div>
+        
+            <div class="content-tile content-tile-img">
+                <a class="image-lbox" href="/images/broquest-debug.jpg">
+                    <img src="/images/broquest-debug.jpg" class="post-image img-responsive">
+                </a>
+            </div>
+        
+            <div class="content-tile content-tile-img">
+                <a class="image-lbox" href="/images/broquest-spritesheet.png">
+                    <img src="/images/broquest-spritesheet.png" class="post-image img-responsive">
+                </a>
+            </div>
+        
+    </div>
+</div>
+    </main>
+
+    <footer class="main-footer template--footer">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 class="footer-link-title">Contact</h3>
+        <address class='main-title-links'>
+            <i class="fa fa-lg fa-envelope"></i> 
+            <a href="mailto:randolph.salvador@gmail.com?Subject=Hey, your website is cool!" target="\_top">randolph.salvador@gmail.com</a>
+            <br>
+            <i class="fa fa-lg fa-linkedin-square"></i> 
+            <a href="https://www.linkedin.com/in/randolphsalvador/">linkedin.com/in/randolphsalvador</a>
+            <br>
+            <i class="fa fa-lg fa-github"></i> 
+            <a href="https://github.com/rjsalvadorr/">github.com/rjsalvadorr</a>
+            <br>
+        </address>
+        <br>
+        <span id="footer-copyright">
+          © 2018 Randolph Jerome Salvador
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

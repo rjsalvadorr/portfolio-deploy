@@ -1,0 +1,401 @@
+body {
+  background: url("../images/kindajean_bg_dark.png") repeat;
+}
+#body-filter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/**** TEXT STYLING *****/
+.main-page-title {
+  font-family: 'Kalam', cursive;
+  width: 100%;
+  color: #fff;
+  font-size: 4.125rem;
+  line-height: 4.125rem;
+  letter-spacing: 1px;
+}
+.main-page-title,
+.menu-link-title,
+.footer-link-title {
+  text-shadow: 2px 2px 3px #322;
+}
+.menu-link-title,
+.footer-link-title {
+  font-weight: 300;
+}
+.c-link-title {
+  font-weight: 300;
+  color: #fff;
+}
+.c-link-title:hover,
+.c-link-title:focus,
+.c-link-title:active {
+  color: #ccc;
+}
+body,
+p,
+ul,
+li,
+span,
+div,
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.1px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 2px 2px 3px #000;
+}
+a {
+  text-decoration: none;
+  color: #f55;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #f11;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+p a {
+  color: #f55;
+  font-size: inherit;
+  line-height: inherit;
+}
+p a:hover,
+p a:focus,
+p a:active {
+  color: #f11;
+}
+#main-page-subtitle {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+.c-link-subtitle,
+.post-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.c-link-back .c-link-anchor .c-link-title {
+  color: #fff;
+}
+.c-link-back .c-link-anchor .c-link-title:hover {
+  color: #d9d9d9;
+}
+.c-link-back .c-link-anchor .c-link-title:hover span.glyphicon {
+  color: #d9d9d9;
+}
+.post-back .post-anchor .post-title {
+  color: #fff;
+}
+.post-back .post-anchor .post-title span.glyphicon {
+  color: #fff;
+}
+.post-back .post-anchor .post-title:hover {
+  color: #d9d9d9;
+}
+.post-back .post-anchor .post-title:hover span.glyphicon {
+  color: #d9d9d9;
+}
+.c-link-back .c-link-title {
+  font-size: 60px;
+  line-height: 60px;
+}
+.c-link-back .c-link-title span.glyphicon {
+  font-size: 48px;
+  line-height: 48px;
+}
+.c-link-snippet p {
+  font-size: 1.7rem;
+}
+.c-link-snippet p a {
+  font-size: inherit;
+}
+.c-link-anchor,
+.post-anchor {
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+}
+.post-anchor {
+  font-size: 32px;
+}
+.post-anchor span.glyphicon {
+  font-size: 26px;
+  color: #f55;
+}
+.post-anchor:hover span.glyphicon {
+  color: #f11;
+}
+.post-anchor .c-link-title {
+  color: #f55;
+}
+.post-anchor .c-link-title:hover,
+.post-anchor .c-link-title:focus,
+.post-anchor .c-link-title:active {
+  color: #f11;
+}
+/**** END TEXT STYLING *****/
+.main-container {
+  margin-top: 120px;
+}
+#main-content-grid {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main-content-grid > div:nth-of-type(2n+1) {
+  padding-right: 40px;
+}
+#main-content-grid > div:nth-of-type(2n) {
+  padding-left: 40px;
+}
+.content-tile {
+  box-sizing: border-box;
+  width: 50%;
+  padding-bottom: 120px;
+}
+.content-tile article {
+  position: relative;
+}
+.content-tile article.c-link-snippet {
+  padding: 15px;
+}
+.content-tile article.c-link-post .c-link-content {
+  margin: 0 0 13px 0;
+}
+.content-tile article.c-link-post .c-link-content p {
+  margin-bottom: 0;
+}
+.content-tile hr {
+  margin: 20px 0;
+}
+.content-tile.content-tile-two-thirds {
+  width: 100%;
+}
+.content-tile.content-tile-half {
+  width: 50%;
+}
+.content-tile.content-tile-full,
+.content-tile.app-content-tile {
+  width: 100% !important;
+}
+.content-tile.c-tile-snippet {
+  padding-top: 10px;
+}
+.content-tile.c-tile-snippet article {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+.content-tile.c-tile-snippet article .c-link-content p {
+  font-size: 1.8em;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+.content-tile.c-tile-snippet article .c-link-content p a {
+  font-weight: inherit;
+}
+.c-link-header {
+  padding: 0 0 10px 0;
+}
+.c-link-footer {
+  padding: 5px 15px 15px 15px;
+}
+.post-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.main-page-title,
+.c-link-title,
+.post-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.c-link-title {
+  text-shadow: 2px 2px 3px #111;
+}
+.c-link-subtitle,
+.post-subtitle {
+  margin-top: 0;
+}
+.c-link-post .c-link-subtitle {
+  display: inline-block;
+}
+.c-link-anchor img {
+  margin-bottom: 10px;
+}
+.c-tile-menu {
+  margin-bottom: 0px;
+}
+.c-link-back,
+.post-back {
+  min-height: 250px/2;
+}
+.c-link-back,
+.post-back {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post-content {
+  margin-top: 10px;
+}
+.c-link-splash-img,
+.c-link-image {
+  width: 100%;
+}
+.c-link-read-more {
+  font-size: 20px;
+  font-weight: 300;
+}
+.menu-link-container {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  width: 100%;
+  background: url("../images/red-swirls-tile.png") repeat;
+  box-shadow: 5px 5px 5px #070707;
+  z-index: 30;
+}
+.menu-link-container .twelve.columns {
+  display: flex;
+  flex-direction: row;
+}
+#main-title-wrapper {
+  display: flex;
+  align-items: center;
+}
+#main-title-wrapper {
+  width: 55%;
+}
+.menu-link-wrapper {
+  width: 100%;
+  position: relative;
+}
+.menu-link-wrapper .menu-link-text {
+  color: #fff;
+}
+.menu-link-wrapper.active .menu-link-anchor {
+  background-color: rgba(0,0,0,0.25);
+}
+.menu-link-wrapper.menu-link-1 {
+  width: 15%;
+}
+.menu-link-wrapper.menu-link-2 {
+  width: 15%;
+}
+.menu-link-wrapper.menu-link-3 {
+  width: 15%;
+}
+.menu-link-spacer {
+  height: 50%;
+}
+.menu-link {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.menu-link-title {
+  color: inherit;
+  margin: 0;
+  font-size: 2.25rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.menu-link-subtitle {
+  position: relative;
+  top: -4px;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  color: inherit;
+}
+.menu-link-anchor {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 100%;
+}
+.menu-link-text {
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+.template--post {
+  padding-bottom: 50px;
+}
+.template--post img {
+  height: auto;
+  width: 100%;
+  border-radius: 4px;
+}
+.template--post .content-tile {
+  width: auto;
+  padding-bottom: 40px;
+}
+.main-footer {
+  color: #575757;
+  background: url("../images/red-swirls-tile.png") repeat;
+  box-shadow: 5px -5px 5px #070707;
+  padding: 20px 0;
+}
+.main-footer .footer-link-title {
+  margin-bottom: 8px;
+}
+.main-footer address {
+  font-style: normal;
+}
+/**** MISC STYLING *****/
+.litebox.overlay {
+  z-index: 100 !important;
+  background-color: rgba(0,0,0,0.75) !important;
+}
+.litebox.overlay img {
+  max-width: 90% !important;
+  max-height: 90% !important;
+}
+/**** END MISC STYLING *****/
+
+
+	.c-link-footer {
+		padding: 0;
+	}
+
+	.template--tag img,.template--category img {
+		border-radius: 4px;
+	}

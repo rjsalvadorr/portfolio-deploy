@@ -1,0 +1,180 @@
+body {
+    font-family: sans-serif;
+    background: none;
+    background-color: #333;
+    padding: 1rem;
+}
+
+#fretboard-container {
+    margin: 1em 0;
+}
+
+/* Menu */
+#fretboard-menu {
+    height: 12rem;
+    margin: 1em 0;
+}
+
+#fretboard-menu-text {
+    display: inline-block;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#note-img-container {
+    background-color: #DDD;
+    text-align: center;
+    display: inline-block;
+}
+
+#guitar-note-img {
+    height: 12rem;
+    margin: 0 auto;
+}
+
+.fretboard-quiz-button {
+    margin: 0.5em 0 0 0;
+    padding: 0.5em;
+    height: 2.5em;
+    color: #222;
+    width: 100%;
+    display: block;
+}
+.fretboard-quiz-button:first-of-type {
+    margin: 0;
+}
+
+#fretboard-text-container {
+    margin: 1em 0;
+}
+
+#fretboard-text-output {
+    float: right;
+    text-align: right;
+}
+
+#fretboard-score {
+    text-align: left;
+}
+
+/* Really goin' for that ivory colour. */
+.nut {
+    background-color: #ffe4c4;
+    display: inline-block;
+    width: 1.5em;
+}
+
+.fretboard {
+    margin: 1em 0;
+}
+
+.annotations {
+    margin: 1em 0;
+}
+
+/* The fretboard unit represents a whole fret row. */
+.fretboard-unit {
+    background-color: #33200C;
+    display: inline-block;
+    width: 7rem;
+}
+
+.fret {
+    display: inline-block;
+    background-color: #999;
+    background: linear-gradient(90deg, #999, #666);
+    width: 0.4rem;
+}
+
+/* SPACERS - These have to have the same width as the corresponding element */
+.space-nut {
+    display: inline-block;
+    width: 1.5em;
+    text-align: center;
+}
+
+.space-fretboard-unit {
+    display: inline-block;
+    width: 5rem;
+    text-align: center;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.space-fret {
+    display: inline-block;
+    width: 0.4rem;
+    text-align: center;
+}
+
+/* The string unit represents a note location. Contains a string graphic, and may contain the marker. */
+.string-unit {
+    display: block;
+    position: relative;
+    height: 2rem;
+}
+
+/* The fret unit is exactly like the string unit EXCEPT it cannot be selected. Only used for fret graphics. */
+.fret-unit {
+    display: block;
+    position: relative;
+    height: 2rem;
+}
+
+/* String graphics (one for treble, one for bass) */
+.string-treble {
+    background-color: #918170;
+    background: linear-gradient(#A49688, #FFF);
+    position: absolute;
+    top: 50%;
+    height: 0.2rem;
+    width: 100%;
+    margin-top: -0.1rem;
+    box-shadow: 0 2px 3px #281909;
+}
+
+.string-bass {
+    background-color: #FFF;
+    background: linear-gradient(#CCC, #666);
+    position: absolute;
+    top: 50%;
+    height: 0.2rem;
+    width: 100%;
+    margin-top: -0.1rem;
+    box-shadow: 0 2px 3px #281909;
+}
+
+.fret .string-bass,
+.fret .string-treble {
+    box-shadow: 0 1px #444;
+}
+
+#fretboard-nut .string-bass,
+#fretboard-nut .string-treble {
+    box-shadow: none;
+}
+
+/* Note marker. This shows the user's answer. Has properties for positioning. */
+.note-marker {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.8rem;
+    left: 50%;
+    margin-left: -0.8rem;
+
+    width: 1.6rem;
+    height: 1.6rem;
+    background: red;
+    -moz-border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    border-radius: 0.8rem;
+    
+    box-shadow: 1px 1px 3px #222;
+}
+.marker-correct {
+    background: green !important;
+}
+.marker-wrong {
+    background: red !important;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RJ Salvador - Add Quiz</title>
+        <meta name="title" content="RJ Salvador - Add Quiz" />
+        <meta name="description" content="A computer programmer's website. Featuring a portfolio and other mishaps">
+        <link rel="image_src" href="img/default_image_small.png" />
+        <meta name="author" content="RJ Salvador">
+
+        <link rel="stylesheet" href="fonts/open_sans_stylesheet.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="fonts/droid_serif_stylesheet.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="fonts/crimson_stylesheet.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="main-container" class="container">
+            <div class="row">
+                <h1>So you wanna add a quiz, huh?</h1>
+                <p>Well, you came to the right place!!!</p>
+                <div>
+                    <h3>Select Quiz Type:</h3>
+                    <select id="quiz-type">
+                        <option value="">Simple</option>
+                        <option value="">Matching</option>
+                        <option value="">Multiple Choice</option>
+                    </select>
+                </div>
+                
+                <h3>Simple Questions</h3>
+                <table id="main-table">
+                    <thead>
+                        <td></td>
+                        <td>QUESTIONS</td>
+                        <td>ANSWERS</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><input class="quizzer-input" type="text"/></td>
+                            <td><input class="quizzer-input"type="text"/></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><input class="quizzer-input"type="text"/></td>
+                            <td><input class="quizzer-input"type="text"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-primary">Add question</button>
+            </div>
+        </div>
+    </body>
+</html>

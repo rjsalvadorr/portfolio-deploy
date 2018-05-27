@@ -1,0 +1,59 @@
+#msg-container {
+  height: 30px;
+  font-size: 30px;
+}
+body {
+  background-color: #222;
+  color: #ddd;
+}
+.et-button-label {
+  font-size: 20px;
+  line-height: 40px;
+}
+.et-button,
+.et-button-fill {
+  background-color: #ddf;
+  color: #222;
+  font-size: 20px;
+  line-height: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+}
+.et-button.active {
+  background-color: #fff;
+}
+.et-button-fill {
+  width: 100%;
+}
+.button-row {
+  margin-bottom: 15px;
+}
+.et-btn-group {
+  width: 100%;
+}
+.et-btn-group .et-button {
+  background-color: #445;
+}
+.et-btn-group .et-button.active {
+  background-color: #ddf;
+}
+.et-btn-group-two {
+  width: 100%;
+}
+.et-btn-group-two .et-button {
+  background-color: #445;
+}
+.et-btn-group-two .et-button.active {
+  background-color: #ddf;
+}
+.et-btn-group-two .et-button {
+  width: 50%;
+}
+#btn-help-icon {
+  font-weight: bold;
+}

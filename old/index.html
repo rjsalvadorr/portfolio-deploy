@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJ Salvador - Homepage</title>
+    <meta name="title" content="RJ Salvador - Homepage" />
+    <meta name="description" content="A computer programmer's website. Featuring a portfolio and other mishaps">
+    <link rel="image_src" href="img/default_image_small.png" />
+    <meta name="author" content="RJ Salvador">
+
+    <link rel="stylesheet" href="fonts/open_sans_stylesheet.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="fonts/droid_serif_stylesheet.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="fonts/crimson_stylesheet.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/radio-init.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/quizzer.js"></script>
+</head>
+
+<body>
+    <div id="main-container" class="container-fluid">
+        <div class="row">
+            <header id="logo-header-sm" class="hidden-sm hidden-md hidden-lg">
+                <h3 id="logo-xs">RJ Salvador</h3>
+            </header>
+            <div id="logo-header-lg" class="col-sm-4 hidden-xs">
+                <div id="logo-container">
+                    <img id="logo-sm-md-lg" src="img/logo2.png" class="img-responsive">
+                    <ul id="link-list">
+                        <li><a href="#about"><h3>About</h3></a>
+                        </li>
+                        <li><a href="#portfolio"><h3>Portfolio</h3></a>
+                        </li>
+                        <li><a href="#contact"><h3>Contact</h3></a>
+                        </li>
+                        <li><a href="#neat-stuff"><h3>Neat Stuff</h3></a>
+                        </li>
+                        <li><a href="http://www.rj-salvador.com/blog/"><h3>Blog</h3></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main-content" class="col-sm-8">
+                <div id="about" class="content-container">
+                    <h2>Hello!</h2>
+                    <hr>
+                    <p>Welcome to my little corner of the web! My name's RJ, and I like to play with code and music. Here, you'll find info about my previous software projects, as well as my ramblings. Thanks for visiting!</p>
+                </div>
+                <div id="portfolio" class="content-container portfolio-container">
+                    <h2>Portfolio</h2>
+                    <hr>
+                    <div class="portfolio-content clearfix">
+                        <a href="wip.html">
+                            <img class="img-responsive portfolio-img" src="img/thumb_hotel.png" />
+                        </a>
+                        <h4>Hotel Website</h4>
+                        <p class="work-desc">A website for a hotel, which lets clients search for available rooms and make reservations. Implemented as a Java web app, using an Oracle 11g database.</p>
+                    </div>
+                    <div class="portfolio-content clearfix">
+                        <a href="wip.html">
+                            <img class="img-responsive portfolio-img" src="img/thumb_hairstylist.png" />
+                        </a>
+                        <h4>Hairstylist Scheduler</h4>
+                        <p class="work-desc">Website for a hairstylist, showing information about the business. Also allows clients to schedule appointments. Uses PHP and MySQL in the back-end.</p>
+                    </div>
+                    <div class="portfolio-content clearfix">
+                        <a href="wip.html">
+                            <img class="img-responsive portfolio-img" src="img/thumb_movies.png" />
+                        </a>
+                        <h4>FlowFlix</h4>
+                        <p class="work-desc">A movie database, emulating a video rental service. Allows users to 'rent' movies, and lets administrators add new movies to the database. Written in ASP, using a SQL Server database.</p>
+                    </div>
+                    <div class="portfolio-content clearfix">
+                        <a href="wip.html">
+                            <img class="img-responsive portfolio-img" src="img/thumb_game.png" />
+                        </a>
+                        <h4>BroQuest (working title)</h4>
+                        <p class="work-desc">A game written in C++, using the SDL library. During the summer of 2013, my brother and I worked on this 2D game for PC. He handled the artwork and design, while I handled the programming.</p>
+                    </div>
+                </div>
+                <div id="neat-stuff" class="content-container">
+                    <div>
+                        <h2>My music</h2>
+                        <hr>
+                        <p>I like to mess around with music every now and then. Thankfully, computer programming and music composition have plenty of things in common!<br><a class="btn btn-primary" href="https://soundcloud.com/rj-salvador" target="_blank">Listen to the tunes!</a></p>
+                    </div>
+                    <div>
+                        <iframe src="fretboard-quizzer/index.html" style="width: 100%; height: 75rem;" frameBorder="0" seamless='seamless'>
+                            <p>Your browser does not support iframes.</p>
+                        </iframe>
+                    </div>
+<!--
+                    <div>
+                        <h2>Quizzer</h2>
+                        <hr>
+                        <p>A little thing I'm writing to help memorize some little things. Sometimes, there's no other way to memorize really boring information...</p>
+                        <div id="quizzer-menu" class="btn-group" data-toggle="buttons">
+                            <h3>Select Quiz:</h3>
+                        </div>
+                        <div id="quizzer-body">
+                            <h3 id="quizzer-title">Quiz Title</h3>
+                            <p id="quizzer-intro"></p>
+                            <ul id="quizzer-list">
+                            </ul>
+                            <p id="quizzer-notifications"></p>
+                            <button id="quizzer-submit" class="btn btn-primary">Submit quiz!</button>
+                        </div>
+                    </div>
+-->
+                </div>
+                <div id="contact" class="content-container">
+                    <h2>Contact</h2>
+                    <hr>
+                    <p><span class="inline-bold">Email:</span> randolph.salvador@gmail.com<br>
+                        <span class="inline-bold">LinkedIn:</span>  <a href="http://ca.linkedin.com/in/randolphsalvador" target="_blank">click me</a><br>
+                        <span class="inline-bold">Instagram:</span> rjsalvadorr
+                    </p>
+                </div>
+                <footer id="copyright-footer" class="content-container text-center">
+                    <p>Copyright &copy; Randolph Salvador 2015</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

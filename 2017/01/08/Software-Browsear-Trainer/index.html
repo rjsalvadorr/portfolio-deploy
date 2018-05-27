@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BOOTSTRAP: The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>RJ Salvador - Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- META TAGS FOR FACEBOOK AND OTHER LINKS -->
+    <meta name="description" content="RJ Salvador&#39;s Portfolio. Featuring software, music, and other treats.">
+    <meta name="author" content="RJ Salvador">
+    <link rel="image_src" href="http://rj-salvador.com/images/img-icon4.jpg">
+    <meta property="og:site_name" content="RJ Salvador - Portfolio">
+    <meta property="og:title" content="RJ Salvador - Portfolio">
+    <meta property="og:description" content="RJ Salvador&#39;s Portfolio. Featuring software, music, and other treats.">
+    <meta property="og:image" content="http://rj-salvador.com/images/img-icon4.jpg">
+    <meta property="og:url" content="http://rj-salvador.com">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="/scripts/jquery.litebox.js"></script>
+    <script src="/scripts/globals.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400|Kalam:700" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/jquery.litebox.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+</head>
+
+
+
+<body class='layout-post'>
+    <!--
+    DEBUG DATA
+    is home? false
+    is post? true
+    is archive? false
+    is category? false
+    is tag? false
+    -->
+
+    <div id='body-filter'>
+        <!-- This div is for visual effects -->
+    </div>
+    <!--
+    The menu bar has a "fixed" position, so its place in the
+    DOM heirarchy doesn't really matter.
+    -->
+    
+
+<div class='menu-link-container template--menu-bar'>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <div id='main-title-wrapper'>
+                    <h1 class='main-page-title'>RJ Salvador</h1>
+                </div>
+                
+                        
+
+<nav class="menu-link-wrapper  menu-link-1 template--menu-link">
+    <article class="menu-link">
+        <a class="menu-link-anchor" href="/tags/software/">
+            <div class='menu-link-text'>
+                <span class="menu-link-title">Software</span>
+                
+                
+            </div>
+        </a>
+    </article>
+</nav>
+
+
+                
+                        
+
+<nav class="menu-link-wrapper active menu-link-2 template--menu-link">
+    <article class="menu-link">
+        <a class="menu-link-anchor" href="/tags/music/">
+            <div class='menu-link-text'>
+                <span class="menu-link-title">Music</span>
+                
+                
+            </div>
+        </a>
+    </article>
+</nav>
+
+
+                
+                        
+
+<nav class="menu-link-wrapper  menu-link-3 template--menu-link">
+    <article class="menu-link">
+        <a class="menu-link-anchor" href="/tags/blog/">
+            <div class='menu-link-text'>
+                <span class="menu-link-title">Misc</span>
+                
+                
+            </div>
+        </a>
+    </article>
+</nav>
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <main id="main-container" class="container main-container">
+        
+<div class='row template--post'>
+    <div id='primary-content-tile' class="six columns">
+        <header id="post-header">
+            <h1 class="post-title">Browsear Trainer</h1>
+        
+            
+                <small class="post-subtitle">Jan 2017</small>
+            
+        </header>
+        <div class="post-content">
+        
+            <a href="/apps/browsear-training/" class="post-ext-app-link" target="_blank">See the full app here!</a>
+        
+        <p>Around Fall/Winter 2016, I really wanted to be a better musician. That involved training aural skills. Normally, that takes a long time to develop, but I was convinced that software can make that a bit faster. <a id="more"></a></p>
+<blockquote>
+<p><em>Heads up! This post contains a lot of jargon related to music theory. Also, the app plays music through the browser. And was only tested for Chrome and Firefox on desktop</em></p>
+</blockquote>
+<p>This all started when I first saw <a href="https://www.youtube.com/watch?v=N-wMWRAITM8" target="_blank" rel="noopener">this video</a> describing an ear training exercise:</p>
+<ol>
+<li>Have a pianist buddy play a cadence to confirm the sound of a particular key in your ear.</li>
+<li>Piano bud then plays a note in that key</li>
+<li>You have to identify that note/scale degree just by listening to it</li>
+</ol>
+<p>By all accounts, it’s an effective exercise. After discovering this method, the first thing I thought was: “<em>Hey, I can write that. It’s probably going to be easy too…</em>“</p>
+<h2 id="Game-plan"><a href="#Game-plan" class="headerlink" title="Game plan"></a>Game plan</h2><p>I wanted the app to do the following on a browser:</p>
+<ol>
+<li>Play a cadence to confirm the tonic in users’ ears.</li>
+<li>Play the test note.</li>
+<li>Ask the user to guess the interval.</li>
+<li>If the user got it right, reset the quiz.<br>4b. If the user got it wrong, give them the option to replay the sounds, and guess until they get it right.</li>
+<li>Rinse and repeat, until the user is really good at playing by ear.</li>
+</ol>
+<p>Bonus objectives:</p>
+<ul>
+<li>Allow ear training in a minor key.</li>
+<li>Melodic dictation. This involves asking the user for the specific scale degrees used in a melody.</li>
+</ul>
+<h2 id="Pulling-it-off"><a href="#Pulling-it-off" class="headerlink" title="Pulling it off"></a>Pulling it off</h2><p>For this project, I decided to use the following tools/libraries:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/teoria" target="_blank" rel="noopener">teoria</a>, a JavaScript library for music theory.<br>This allowed me to use the correct chords for random keys, and send the right MIDI keys to the midi player.</li>
+<li><a href="https://www.npmjs.com/package/midi-player-js" target="_blank" rel="noopener">midi-player-js</a> and <a href="https://www.npmjs.com/package/midi-writer-js" target="_blank" rel="noopener">midi-writer-js</a>, JavaScript libraries for writing and playing MIDI notes on a browser. This is one component I used to play MIDI notes through the browser.</li>
+<li><a href="https://www.npmjs.com/package/soundfont-player" target="_blank" rel="noopener">soundfont-player</a>, another JS library. This is what did most of the heavy lifting for actually playing sounds.</li>
+</ul>
+<h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><p>I hit just about all my targets. I could use this tool ad nauseam for both major and minor keys. I noticed a bit of improvement in my scores as I kept using this thing. So something was improving. I felt like my listening skills improved, but I can’t really verify if this tool made a huge impact for me.</p>
+<p>Would I recommend this tool for others? Probably not. I’ve found better methods for ear training. My recommendation for those interested: <strong>TRANSCRIBE LOTS OF MUSIC</strong> and <strong>PLAY ALONG TO RECORDINGS</strong>. Those activities will <em>force</em> you to listen actively, and they’re now my favourite ways to train my ears.</p>
+<p>All in all, getting MIDI notes to play on a browser was tons of fun. I could probably take a lot of this code and make some more toys for computer-aided composition. Or maybe some browser-based instrument?</p>
+<h2 id="Software-used"><a href="#Software-used" class="headerlink" title="Software used"></a>Software used</h2><ul>
+<li>node &amp; npm, and the following packages:<ul>
+<li>jQuery</li>
+<li>browserify</li>
+<li>teoria</li>
+<li>midi-writer-js</li>
+<li>midi-player-js</li>
+<li>soundfont-player</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div class="six columns post-column--images">
+        
+            <div class="content-tile content-tile-img">
+                <a class="image-lbox" href="/images/ear-trainer-screenshot.jpg">
+                    <img src="/images/ear-trainer-screenshot.jpg" class="post-image img-responsive">
+                </a>
+            </div>
+        
+    </div>
+</div>
+    </main>
+
+    <footer class="main-footer template--footer">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 class="footer-link-title">Contact</h3>
+        <address class='main-title-links'>
+            <i class="fa fa-lg fa-envelope"></i> 
+            <a href="mailto:randolph.salvador@gmail.com?Subject=Hey, your website is cool!" target="\_top">randolph.salvador@gmail.com</a>
+            <br>
+            <i class="fa fa-lg fa-linkedin-square"></i> 
+            <a href="https://www.linkedin.com/in/randolphsalvador/">linkedin.com/in/randolphsalvador</a>
+            <br>
+            <i class="fa fa-lg fa-github"></i> 
+            <a href="https://github.com/rjsalvadorr/">github.com/rjsalvadorr</a>
+            <br>
+        </address>
+        <br>
+        <span id="footer-copyright">
+          © 2018 Randolph Jerome Salvador
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
