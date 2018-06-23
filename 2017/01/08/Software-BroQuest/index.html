@@ -22,13 +22,13 @@
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
     <script src="/scripts/jquery.litebox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="/scripts/globals.js"></script>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400|Kalam:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:regular,bold|Open+Sans:light,regular" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/jquery.litebox.css">
@@ -56,12 +56,14 @@
     -->
     
 
-<div class='menu-link-container template--menu-bar'>
+<div class='menu-link-container template--header'>
     <div class="container">
         <div class="row">
-            <div class="twelve columns">
+            <div class="twelve columns nav-wrapper--desktop">
                 <div id='main-title-wrapper'>
-                    <h1 class='main-page-title'>RJ Salvador</h1>
+                    <h1 class='main-page-title'>
+                        R<span class="dot">&middot;</span>J<span class="dot">&middot;</span>S
+                    </h1>
                 </div>
                 
                         
@@ -78,7 +80,6 @@
     </article>
 </nav>
 
-
                 
                         
 
@@ -93,7 +94,6 @@
         </a>
     </article>
 </nav>
-
 
                 
                         
@@ -110,13 +110,75 @@
     </article>
 </nav>
 
+                
+            </div>
+            <div class="twelve columns nav-wrapper--mobile">
+                <div id='main-title-wrapper'>
+                    <h1 class='main-page-title'>
+                        R<span class="dot">&middot;</span>J<span class="dot">&middot;</span>S
+                    </h1>
+                </div>
+                <div class="nav-link-wrapper">
+                    <i class="fa fa-2x fa-bars nav-link--mobile"></i> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='hidden-link-container template--header'>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns nav-wrapper--drawer">
+                
+                        
+
+<nav class="menu-link-wrapper active menu-link-1 template--menu-link">
+    <article class="menu-link">
+        <a class="menu-link-anchor" href="/tags/software/">
+            <div class='menu-link-text'>
+                <span class="menu-link-title">Software</span>
+                
+                
+            </div>
+        </a>
+    </article>
+</nav>
+
+                
+                        
+
+<nav class="menu-link-wrapper  menu-link-2 template--menu-link">
+    <article class="menu-link">
+        <a class="menu-link-anchor" href="/tags/music/">
+            <div class='menu-link-text'>
+                <span class="menu-link-title">Music</span>
+                
+                
+            </div>
+        </a>
+    </article>
+</nav>
+
+                
+                        
+
+<nav class="menu-link-wrapper  menu-link-3 template--menu-link">
+    <article class="menu-link">
+        <a class="menu-link-anchor" href="/tags/blog/">
+            <div class='menu-link-text'>
+                <span class="menu-link-title">Misc</span>
+                
+                
+            </div>
+        </a>
+    </article>
+</nav>
 
                 
             </div>
         </div>
     </div>
 </div>
-
 
     <main id="main-container" class="container main-container">
         
@@ -223,13 +285,13 @@
       <div class="twelve columns">
         <h3 class="footer-link-title">Contact</h3>
         <address class='main-title-links'>
-            <i class="fa fa-lg fa-envelope"></i> 
+            <i class="fa fa-sm fa-envelope"></i> 
             <a href="mailto:randolph.salvador@gmail.com?Subject=Hey, your website is cool!" target="\_top">randolph.salvador@gmail.com</a>
             <br>
-            <i class="fa fa-lg fa-linkedin-square"></i> 
+            <i class="fa fa-sm fa-linkedin-square"></i> 
             <a href="https://www.linkedin.com/in/randolphsalvador/">linkedin.com/in/randolphsalvador</a>
             <br>
-            <i class="fa fa-lg fa-github"></i> 
+            <i class="fa fa-sm fa-github"></i> 
             <a href="https://github.com/rjsalvadorr/">github.com/rjsalvadorr</a>
             <br>
         </address>

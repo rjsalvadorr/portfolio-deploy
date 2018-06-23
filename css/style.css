@@ -10,12 +10,11 @@ body {
 }
 /**** TEXT STYLING *****/
 .main-page-title {
-  font-family: 'Kalam', cursive;
-  width: 100%;
+  font-family: 'Crimson Text', serif;
   color: #fff;
-  font-size: 4.125rem;
-  line-height: 4.125rem;
-  letter-spacing: 1px;
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: 0.5px;
 }
 .main-page-title,
 .menu-link-title,
@@ -25,6 +24,15 @@ body {
 .menu-link-title,
 .footer-link-title {
   font-weight: 300;
+}
+.menu-link-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Open Sans', serif;
+  letter-spacing: 1.5px;
+}
+.menu-link-wrapper.active .menu-link-title {
+  font-weight: bold;
 }
 .c-link-title {
   font-weight: 300;
@@ -56,10 +64,10 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Crimson Text', serif;
   color: #fff;
-  font-weight: 300;
   text-shadow: 2px 2px 3px #000;
+  letter-spacing: -0.05rem;
 }
 a {
   text-decoration: none;
@@ -96,6 +104,8 @@ p a:active {
 .c-link-subtitle,
 .post-subtitle {
   font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
   font-weight: normal;
@@ -139,7 +149,6 @@ p a:active {
 .c-link-anchor,
 .post-anchor {
   font-size: 16px;
-  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
 }
 .post-anchor {
@@ -162,23 +171,16 @@ p a:active {
 }
 /**** END TEXT STYLING *****/
 .main-container {
-  margin-top: 120px;
+  margin-top: 90px;
 }
 #main-content-grid {
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
 }
-#main-content-grid > div:nth-of-type(2n+1) {
-  padding-right: 40px;
-}
-#main-content-grid > div:nth-of-type(2n) {
-  padding-left: 40px;
-}
 .content-tile {
   box-sizing: border-box;
-  width: 50%;
-  padding-bottom: 120px;
+  width: 100%;
 }
 .content-tile article {
   position: relative;
@@ -193,10 +195,7 @@ p a:active {
   margin-bottom: 0;
 }
 .content-tile hr {
-  margin: 20px 0;
-}
-.content-tile.content-tile-two-thirds {
-  width: 100%;
+  margin: 15px 0;
 }
 .content-tile.content-tile-half {
   width: 50%;
@@ -213,15 +212,6 @@ p a:active {
   box-shadow: none;
   padding: 0;
 }
-.content-tile.c-tile-snippet article .c-link-content p {
-  font-size: 1.8em;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-  font-weight: 300;
-}
-.content-tile.c-tile-snippet article .c-link-content p a {
-  font-weight: inherit;
-}
 .c-link-header {
   padding: 0 0 10px 0;
 }
@@ -229,17 +219,17 @@ p a:active {
   padding: 5px 15px 15px 15px;
 }
 .post-container {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .main-page-title,
-.c-link-title,
 .post-title {
   margin-top: 0;
   margin-bottom: 0;
 }
 .c-link-title {
   text-shadow: 2px 2px 3px #111;
+  margin-bottom: 6px;
 }
 .c-link-subtitle,
 .post-subtitle {
@@ -273,7 +263,6 @@ p a:active {
   width: 100%;
 }
 .c-link-read-more {
-  font-size: 20px;
   font-weight: 300;
 }
 .menu-link-container {
@@ -282,38 +271,18 @@ p a:active {
   bottom: auto;
   width: 100%;
   background: url("../images/red-swirls-tile.png") repeat;
-  box-shadow: 5px 5px 5px #070707;
+  box-shadow: 0 5px 5px #070707;
   z-index: 30;
 }
 .menu-link-container .twelve.columns {
   display: flex;
   flex-direction: row;
 }
-#main-title-wrapper {
-  display: flex;
-  align-items: center;
-}
-#main-title-wrapper {
-  width: 55%;
-}
-.menu-link-wrapper {
-  width: 100%;
-  position: relative;
-}
 .menu-link-wrapper .menu-link-text {
-  color: #fff;
+  color: #ccc;
 }
 .menu-link-wrapper.active .menu-link-anchor {
-  background-color: rgba(0,0,0,0.25);
-}
-.menu-link-wrapper.menu-link-1 {
-  width: 15%;
-}
-.menu-link-wrapper.menu-link-2 {
-  width: 15%;
-}
-.menu-link-wrapper.menu-link-3 {
-  width: 15%;
+  color: #fff;
 }
 .menu-link-spacer {
   height: 50%;
@@ -325,36 +294,58 @@ p a:active {
   right: 0;
 }
 .menu-link-title {
-  color: inherit;
   margin: 0;
-  font-size: 2.25rem;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-}
-.menu-link-subtitle {
-  position: relative;
-  top: -4px;
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 1.3;
-  letter-spacing: 1px;
-  color: inherit;
 }
 .menu-link-anchor {
   display: flex;
   align-items: center;
   color: #fff;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
 }
 .menu-link-text {
-  text-align: center;
+  text-align: right;
   text-transform: uppercase;
   width: 100%;
+}
+.main-page-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  bottom: 3px;
+}
+.main-page-title .dot {
+  color: #ddd;
+  font-size: 3rem;
+  line-height: 3rem;
+  padding: 0 2px;
+}
+.nav-link--mobile {
+  height: 40px;
+  line-height: 40px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.nav-link--mobile.active {
+  color: #1a1a1a;
+}
+.hidden-link-container {
+  position: fixed;
+  top: 59px;
+  width: 100%;
+  background: url("../images/red-swirls-tile.png") repeat;
+  box-shadow: 0 5px 5px #070707;
+  z-index: 29;
+}
+.hidden-link-container .nav-wrapper--drawer {
+  display: flex;
+}
+.hidden-link-container .nav-wrapper--drawer nav.menu-link-wrapper {
+  flex: 1 1 auto;
+}
+.hidden-link-container .nav-wrapper--drawer nav.menu-link-wrapper .menu-link-text {
+  text-align: center;
 }
 .template--post {
   padding-bottom: 50px;
@@ -372,13 +363,157 @@ p a:active {
   color: #575757;
   background: url("../images/red-swirls-tile.png") repeat;
   box-shadow: 5px -5px 5px #070707;
-  padding: 20px 0;
+  margin-top: 20px;
+  padding: 20px 0 25px 0;
 }
 .main-footer .footer-link-title {
   margin-bottom: 8px;
 }
 .main-footer address {
   font-style: normal;
+}
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+h2 {
+  font-size: 2.7rem;
+  line-height: 2.7rem;
+}
+h3 {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+h4 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+h5 {
+  font-size: 1.35rem;
+  line-height: 1.35rem;
+}
+h6 {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+}
+.nav-wrapper--mobile {
+  display: flex !important;
+}
+.nav-wrapper--mobile #main-title-wrapper {
+  flex: 3 1 auto;
+}
+.nav-wrapper--mobile .nav-link-wrapper {
+  flex: 1 1 auto;
+}
+.nav-wrapper--mobile .nav-link-wrapper {
+  text-align: right;
+}
+.nav-wrapper--desktop {
+  display: none !important;
+}
+.content-tile {
+  padding-bottom: 30px;
+}
+#main-content-grid > .content-tile {
+  padding-left: 0;
+  padding-right: 0;
+}
+.content-tile.c-tile-snippet .c-link-content p {
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+.hidden-link-container {
+  display: none;
+}
+.hidden-link-container.active {
+  display: block;
+}
+@media (min-width: 400px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  h2 {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+  }
+  h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  h4 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .menu-link-title {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 550px) {
+  .content-tile {
+    padding-bottom: 60px;
+    width: 50%;
+  }
+  #main-content-grid > div:nth-of-type(2n+1) {
+    padding-right: 15px;
+  }
+  #main-content-grid > div:nth-of-type(2n) {
+    padding-left: 15px;
+  }
+}
+@media (min-width: 750px) {
+  .main-footer {
+    margin-top: 0;
+  }
+  .hidden-link-container {
+    display: none !important;
+  }
+  .hidden-link-container.active {
+    display: none !important;
+  }
+  .nav-wrapper--mobile {
+    display: none !important;
+  }
+  .nav-wrapper--desktop {
+    display: flex !important;
+  }
+  .nav-wrapper--desktop #main-title-wrapper {
+    flex: 3 1 auto;
+  }
+  .nav-wrapper--desktop .menu-link-1 {
+    flex: 1 1 auto;
+  }
+  .nav-wrapper--desktop .menu-link-2 {
+    flex: 1 1 auto;
+  }
+  .nav-wrapper--desktop .menu-link-3 {
+    flex: 1 1 auto;
+  }
+  .content-tile {
+    padding-bottom: 90px;
+  }
+  .content-tile .c-tile-snippet .c-link-content p {
+    font-size: 2.5rem;
+  }
+  .content-tile .c-tile-snippet .c-link-content p a {
+    font-weight: inherit;
+  }
+  #main-content-grid > div:nth-of-type(2n+1) {
+    padding-right: 30px;
+  }
+  #main-content-grid > div:nth-of-type(2n) {
+    padding-left: 30px;
+  }
 }
 /**** MISC STYLING *****/
 .litebox.overlay {
