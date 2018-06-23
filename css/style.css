@@ -502,10 +502,10 @@ h6 {
   .content-tile {
     padding-bottom: 90px;
   }
-  .content-tile .c-tile-snippet .c-link-content p {
+  .content-tile.c-tile-snippet .c-link-content p {
     font-size: 2.5rem;
   }
-  .content-tile .c-tile-snippet .c-link-content p a {
+  .content-tile.c-tile-snippet .c-link-content p a {
     font-weight: inherit;
   }
   #main-content-grid > div:nth-of-type(2n+1) {
