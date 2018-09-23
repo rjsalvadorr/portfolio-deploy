@@ -83,7 +83,7 @@
                 
                         
 
-<nav class="menu-link-wrapper  menu-link-2 template--menu-link">
+<nav class="menu-link-wrapper active menu-link-2 template--menu-link">
     <article class="menu-link">
         <a class="menu-link-anchor" href="/tags/music/">
             <div class='menu-link-text'>
@@ -98,7 +98,7 @@
                 
                         
 
-<nav class="menu-link-wrapper active menu-link-3 template--menu-link">
+<nav class="menu-link-wrapper  menu-link-3 template--menu-link">
     <article class="menu-link">
         <a class="menu-link-anchor" href="/tags/blog/">
             <div class='menu-link-text'>
@@ -147,7 +147,7 @@
                 
                         
 
-<nav class="menu-link-wrapper  menu-link-2 template--menu-link">
+<nav class="menu-link-wrapper active menu-link-2 template--menu-link">
     <article class="menu-link">
         <a class="menu-link-anchor" href="/tags/music/">
             <div class='menu-link-text'>
@@ -162,7 +162,7 @@
                 
                         
 
-<nav class="menu-link-wrapper active menu-link-3 template--menu-link">
+<nav class="menu-link-wrapper  menu-link-3 template--menu-link">
     <article class="menu-link">
         <a class="menu-link-anchor" href="/tags/blog/">
             <div class='menu-link-text'>
@@ -185,33 +185,40 @@
 <div class='row template--post'>
     <div id='primary-content-tile' class="six columns">
         <header id="post-header">
-            <h1 class="post-title">Digital Art</h1>
+            <h1 class="post-title">guitarragrams</h1>
         
+            
+                <small class="post-subtitle">Sep 2018</small>
             
         </header>
         <div class="post-content">
         
-        <p>Just a bunch of pics I’ve made over the years. I started making these in case I ever needed any album art or anything like that.</p>
+            <a href="/apps/guitarragrams/" class="post-ext-app-link" target="_blank">See the full app here!</a>
+        
+        <p>Around early 2018, I started compiling guitar chord diagrams as I studied different chord patterns and inversions. That turned into a huge Visio document, which was a pain in the ass to update. I figured that putting it on the web would be a much cooler idea.</p>
+<a id="more"></a>
+<p>This was also a neat opportunity to learn some tech stuff, so I decided to jump on the Vue bandwagon for this one. That turned out to be a great decision. I found that the <a href="https://cli.vuejs.org/guide/creating-a-project.html" target="_blank" rel="noopener">Vue CLI tools</a> didn’t get in my way at all, and the Vue documentation made for an gentle learning curve for a React dev.</p>
+<p>With this project, I just needed to figure out two things, and all the hard stuff was finished in one afternoon:</p>
+<ol>
+<li>Data format for the chord diagrams. I laid it out in a few JSON files here.</li>
+<li>Vue component scheme. I settled for four components here:<ul>
+<li>ChordGroup</li>
+<li>FretboardDiagram</li>
+<li>FretboardMarker</li>
+<li>PatternGroup</li>
+</ul>
+</li>
+</ol>
+<p>If you’re already familiar with web dev frameworks and the Node stack, the view from Vue is majestic.</p>
+<p>For more info, check out the project repository at <a href="https://github.com/rjsalvadorr/guitarragrams" target="_blank" rel="noopener">github.com/rjsalvadorr/guitarragrams</a></p>
 
         </div>
     </div>
     <div class="six columns post-column--images">
         
             <div class="content-tile content-tile-img">
-                <a class="image-lbox" href="/images/art-beans.jpg">
-                    <img src="/images/art-beans.jpg" class="post-image img-responsive">
-                </a>
-            </div>
-        
-            <div class="content-tile content-tile-img">
-                <a class="image-lbox" href="/images/art-log-01.jpg">
-                    <img src="/images/art-log-01.jpg" class="post-image img-responsive">
-                </a>
-            </div>
-        
-            <div class="content-tile content-tile-img">
-                <a class="image-lbox" href="/images/art-log-02.jpg">
-                    <img src="/images/art-log-02.jpg" class="post-image img-responsive">
+                <a class="image-lbox" href="/images/guitarragrams-beta-01.png">
+                    <img src="/images/guitarragrams-beta-01.png" class="post-image img-responsive">
                 </a>
             </div>
         
