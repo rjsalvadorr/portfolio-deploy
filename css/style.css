@@ -240,6 +240,7 @@ p a:active {
 }
 .c-link-anchor img {
   margin-bottom: 10px;
+  border-radius: 3px;
 }
 .c-tile-menu {
   margin-bottom: 0px;
@@ -261,6 +262,7 @@ p a:active {
 .c-link-splash-img,
 .c-link-image {
   width: 100%;
+  border-radius: 3px;
 }
 .c-link-read-more {
   font-weight: 300;
@@ -353,6 +355,7 @@ p a:active {
 .template--post img {
   height: auto;
   width: 100%;
+  border-radius: 3px;
 }
 .template--post .content-tile {
   width: auto;
@@ -522,6 +525,7 @@ h6 {
 .litebox.overlay img {
   max-width: 90% !important;
   max-height: 90% !important;
+  border-radius: 3px;
 }
 /**** END MISC STYLING *****/
 

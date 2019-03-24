@@ -6,6 +6,7 @@
 .litebox.overlay img {
   max-width: 90% !important;
   max-height: 90% !important;
+  border-radius: 3px;
 }
 /**** END MISC STYLING *****/
 
