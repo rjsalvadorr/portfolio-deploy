@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +47,7 @@
 
 
 
-<body class='layout-post'>
+<body class="layout-post">
     <!--
     DEBUG DATA
     is home? false
@@ -57,7 +57,7 @@
     is tag? false
     -->
 
-    <div id='body-filter'>
+    <div id="body-filter">
         <!-- This div is for visual effects -->
     </div>
     <!--
@@ -66,12 +66,12 @@
     -->
     
 
-<div class='menu-link-container template--header'>
+<div class="menu-link-container template--header">
     <div class="container">
         <div class="row">
             <div class="twelve columns nav-wrapper--desktop">
-                <div id='main-title-wrapper'>
-                    <h1 class='main-page-title'>
+                <div id="main-title-wrapper">
+                    <h1 class="main-page-title">
                         R<span class="dot">&middot;</span>J<span class="dot">&middot;</span>S
                     </h1>
                 </div>
@@ -81,7 +81,7 @@
 <nav class="menu-link-wrapper active menu-link-1 template--menu-link">
     <article class="menu-link">
         <a class="menu-link-anchor" href="/tags/software/">
-            <div class='menu-link-text'>
+            <div class="menu-link-text">
                 <span class="menu-link-title">Software</span>
                 
                 
@@ -96,7 +96,7 @@
 <nav class="menu-link-wrapper  menu-link-2 template--menu-link">
     <article class="menu-link">
         <a class="menu-link-anchor" href="/tags/music/">
-            <div class='menu-link-text'>
+            <div class="menu-link-text">
                 <span class="menu-link-title">Music</span>
                 
                 
@@ -111,7 +111,7 @@
 <nav class="menu-link-wrapper  menu-link-3 template--menu-link">
     <article class="menu-link">
         <a class="menu-link-anchor" href="/tags/blog/">
-            <div class='menu-link-text'>
+            <div class="menu-link-text">
                 <span class="menu-link-title">Art &amp; Misc</span>
                 
                 
@@ -123,8 +123,8 @@
                 
             </div>
             <div class="twelve columns nav-wrapper--mobile">
-                <div id='main-title-wrapper'>
-                    <h1 class='main-page-title'>
+                <div id="main-title-wrapper">
+                    <h1 class="main-page-title">
                         R<span class="dot">&middot;</span>J<span class="dot">&middot;</span>S
                     </h1>
                 </div>
@@ -135,7 +135,7 @@
         </div>
     </div>
 </div>
-<div class='hidden-link-container template--header'>
+<div class="hidden-link-container template--header">
     <div class="container">
         <div class="row">
             <div class="twelve columns nav-wrapper--drawer">
@@ -145,7 +145,7 @@
 <nav class="menu-link-wrapper active menu-link-1 template--menu-link">
     <article class="menu-link">
         <a class="menu-link-anchor" href="/tags/software/">
-            <div class='menu-link-text'>
+            <div class="menu-link-text">
                 <span class="menu-link-title">Software</span>
                 
                 
@@ -160,7 +160,7 @@
 <nav class="menu-link-wrapper  menu-link-2 template--menu-link">
     <article class="menu-link">
         <a class="menu-link-anchor" href="/tags/music/">
-            <div class='menu-link-text'>
+            <div class="menu-link-text">
                 <span class="menu-link-title">Music</span>
                 
                 
@@ -175,7 +175,7 @@
 <nav class="menu-link-wrapper  menu-link-3 template--menu-link">
     <article class="menu-link">
         <a class="menu-link-anchor" href="/tags/blog/">
-            <div class='menu-link-text'>
+            <div class="menu-link-text">
                 <span class="menu-link-title">Art &amp; Misc</span>
                 
                 
@@ -192,8 +192,8 @@
 
     <main id="main-container" class="container main-container">
         
-<div class='row template--post'>
-    <div id='primary-content-tile' class="six columns">
+<div class="row template--post">
+    <div id="primary-content-tile" class="six columns">
         <header id="post-header">
             <h1 class="post-title">AutoComposer</h1>
         
@@ -225,8 +225,8 @@
 <h2 id="Game-plan"><a href="#Game-plan" class="headerlink" title="Game plan"></a>Game plan</h2><p>I’ve always wanted to write software that creates music. It’s one of the reasons I liked studying music theory. And I needed an excuse to learn how to use React and some other JS tools. I’ve played with some JS libraries out there that can handle music theory, playback, and notation. So it wasn’t too ambitious of me to mix all of these skills together and take the first step to making an automatic music composer.</p>
 <h2 id="Pulling-it-off"><a href="#Pulling-it-off" class="headerlink" title="Pulling it off"></a>Pulling it off</h2><p>Thankfully, I was at a point where I could do something with my coding skills and music theory knowledge. Music theory can be seen as a set of <em>design patterns</em> or <em>best practices</em> followed by musicians and composers for the last few centuries. As those musicians kept encountering musical problems, they developed techniques to solve them, and passed those techniques down to their apprentices.</p>
 <p>The way I saw it, I could embed those musical rules into a piece of software, and it should produce sounds that weren’t <em>too</em> horrible. For this version of the AutoComposer, I modelled the following musical concepts in code:</p>
-<h3 id="Chords-and-Notes"><a href="#Chords-and-Notes" class="headerlink" title="Chords and Notes"></a>Chords and Notes</h3><p>Musical chords are commonly defined as a set of notes* being played together. There are many types of chords out there, and each one specifies the notes that musicians will choose in order to play a chord. For example, <em>G major</em> consists of the notes <em>G</em>, <em>B</em>, and <em>D</em>. There are other principles which determine the exact order and range to be played. But generally, when a musician wants to play a <em>G major</em> chord, the audience will hear the notes <em>G</em>, <em>B</em>, and <em>D</em>.</p>
-<h3 id="Harmonization"><a href="#Harmonization" class="headerlink" title="Harmonization"></a>Harmonization</h3><p>In most musical situations, melodies are rarely played on their own. Even when an instrument takes a solo, the band continues playing. Now, as a melody rises and falls in pitch, the exact notes in the melody usually <em>harmonize</em> with the chord that’s currently being played by the band. So if the band is playing <em>G major</em> chord and our melody is playing a <em>G</em>, <em>B</em>, or <em>D</em>, those two sides are <em>in harmony</em>.</p>
+<h3 id="Chords-and-Notes"><a href="#Chords-and-Notes" class="headerlink" title="Chords and Notes"></a>Chords and Notes</h3><p>Musical chords are commonly defined as a set of notes* being played together. There are many types of chords out there, and each one specifies the notes that musicians will choose in order to play a chord. For example, <em>G major</em> consists of the notes _G_, _B_, and _D_. There are other principles which determine the exact order and range to be played. But generally, when a musician wants to play a <em>G major</em> chord, the audience will hear the notes _G_, _B_, and _D_.</p>
+<h3 id="Harmonization"><a href="#Harmonization" class="headerlink" title="Harmonization"></a>Harmonization</h3><p>In most musical situations, melodies are rarely played on their own. Even when an instrument takes a solo, the band continues playing. Now, as a melody rises and falls in pitch, the exact notes in the melody usually <em>harmonize</em> with the chord that’s currently being played by the band. So if the band is playing <em>G major</em> chord and our melody is playing a _G_, _B_, or _D_, those two sides are <em>in harmony</em>.</p>
 <h3 id="Melody-Generation"><a href="#Melody-Generation" class="headerlink" title="Melody Generation"></a>Melody Generation</h3><p>The easiest way to create a smooth melody that sounds good when played with chords is to simply choose from the <em>chord tones</em> of each chord. For the initial stage of melody generation, the AutoComposer simply chooses which chord tones are available for each chord, and connects them together. Then it filters them out by a few criteria.</p>
 <h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><p>The AutoComposer is doing exactly what I want it to do. And it turns out that modern Javascript is really fun to play with! Although I have a lot more in mind for the AutoComposer, and a web browser might not be the best environment for those future plans. I may expand the music generation code and have it run on a proper web server so I can do more complicated (and exciting) things with music and code.</p>
 
@@ -261,7 +261,7 @@
     <div class="row">
       <div class="twelve columns">
         <h3 class="footer-link-title">Contact</h3>
-        <address class='main-title-links'>
+        <address class="main-title-links">
             <i class="fa fa-sm fa-envelope"></i> 
             <a href="mailto:randolph.salvador@gmail.com?Subject=Hey, your website is cool!" target="\_top">randolph.salvador@gmail.com</a>
             <br>

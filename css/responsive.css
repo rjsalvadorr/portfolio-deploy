@@ -56,6 +56,9 @@ h6 {
 .hidden-link-container.active {
   display: block;
 }
+.hidden-link-container.active .nav-wrapper--drawer nav.menu-link-wrapper {
+  flex: 0 1 auto;
+}
 @media (min-width: 400px) {
   h1 {
     font-size: 4rem;
