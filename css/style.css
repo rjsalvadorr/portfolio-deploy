@@ -241,6 +241,7 @@ p a:active {
 .c-link-anchor img {
   margin-bottom: 10px;
   border-radius: 3px;
+  box-shadow: 4px 4px 3px rgba(0,0,0,0.7);
 }
 .c-tile-menu {
   margin-bottom: 0px;
@@ -263,6 +264,7 @@ p a:active {
 .c-link-image {
   width: 100%;
   border-radius: 3px;
+  box-shadow: 4px 4px 3px rgba(0,0,0,0.7);
 }
 .c-link-read-more {
   font-weight: 300;
@@ -274,7 +276,7 @@ p a:active {
   bottom: auto;
   width: 100%;
   background: url("../images/textures/red-swirls-tile.png") repeat;
-  box-shadow: 0 4px 4px rgba(0,0,0,0.8);
+  box-shadow: 0 4px 4px rgba(0,0,0,0.7);
   z-index: 30;
 }
 .menu-link-container .twelve.columns {
@@ -344,7 +346,7 @@ p a:active {
   top: 59px;
   width: 100%;
   background: url("../images/textures/small_steps_darky_red.png") repeat;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.8);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.7);
   z-index: 29;
 }
 .hidden-link-container .nav-wrapper--drawer {
@@ -364,6 +366,7 @@ p a:active {
   height: auto;
   width: 100%;
   border-radius: 3px;
+  box-shadow: 4px 4px 3px rgba(0,0,0,0.7);
 }
 .template--post .content-tile {
   width: auto;
@@ -372,7 +375,7 @@ p a:active {
 .main-footer {
   color: #575757;
   background: url("../images/textures/red-swirls-tile.png") repeat;
-  box-shadow: 5px -5px 5px rgba(0,0,0,0.8);
+  box-shadow: 5px -5px 5px rgba(0,0,0,0.7);
   margin-top: 20px;
   padding: 20px 0 25px 0;
 }
@@ -537,6 +540,7 @@ h6 {
   max-width: 90% !important;
   max-height: 90% !important;
   border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
 }
 /**** END MISC STYLING *****/
 
